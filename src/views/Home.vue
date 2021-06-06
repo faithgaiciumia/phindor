@@ -14,33 +14,51 @@
                         <div class="col-sm">
                             <div class="card">
                                 <div class="card-body">
-                                    This is some text within a card body.
+                                    <p class="heading">Total Sales Today</p>
+                                    <h2>KES 246K</h2>
+                                    <p class="footer"><i class="fa fa-arrow-down"></i> 13.8%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="card">
                                 <div class="card-body">
-                                    This is some text within a card body.
+                                    <p class="heading">Profit Today</p>
+                                    <h2>KES 46K</h2>
+                                    <p class="footer"><i class="fa fa-arrow-down"></i> 13.8%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="card">
                                 <div class="card-body">
-                                    This is some text within a card body.
+                                    <p class="heading">Stock Gauge</p>
+                                    <h2>KES 246K</h2>
+                                    <p class="footer"><i class="fa fa-arrow-down"></i> 13.8%</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm">
                             <div class="card">
                                 <div class="card-body">
-                                    This is some text within a card body.
+                                    <p class="heading">Best Seller (Units)</p>
+                                    <h2>Banana</h2>
+                                    <p class="footer"><i class="fa fa-arrow-down"></i> 13.8%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="heading">Worst Seller (Units)</p>
+                                    <h2>Nuts</h2>
+                                    <p class="footer"><i class="fa fa-arrow-down"></i> 13.8%</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="container">
+                        <h4 class="chart-header">Statistics</h4>
                         <div class="container">
                             <canvas id="myChart" style="height: 300px;"></canvas>
                         </div>
@@ -80,5 +98,22 @@ export default {
 .side-icons {
   color: var(--blue);
 }
+.card{
+    margin-top: 10px;
+    height: 150px;
+}
+.card .heading{
+    color: #808080;
+}
+.card h2{
+    font-size: 20px;
+}
+.card .footer{
+    color: #ff0000;
+}
+.chart-header{
+    margin-top: 10px;
+}
+
 
 </style>

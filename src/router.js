@@ -1,66 +1,77 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Inventory from './views/Inventory.vue'
-import Transactions from './views/Transactions.vue'
-import Analytics from './views/Analytics.vue'
-import Market from './views/Market.vue'
-import Employees from './views/Employees.vue'
-import Categories from './views/Categories.vue'
-import HelpCenter from './views/HelpCenter.vue'
-import Settings from './views/Settings.vue'
+import Vue from "vue";
+import Router from "vue-router";
+import Home from "./views/Home.vue";
+import Inventory from "./views/Inventory.vue";
+import Transactions from "./views/Transactions.vue";
+import Analytics from "./views/Analytics.vue";
+import Market from "./views/Market.vue";
+import Employees from "./views/Employees.vue";
+import Categories from "./views/Categories.vue";
+import HelpCenter from "./views/HelpCenter.vue";
+import Settings from "./views/Settings.vue";
+import Login from "./views/Login.vue";
+import Signup from "./views/Signup.vue";
 
-
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
-    mode: 'hash',
-    base: process.env.BASE_URL,
-    routes: [
+  mode: "hash",
+  base: process.env.BASE_URL,
+  routes: [
     {
-        path: '/',
-        name: 'home',
-        component: Home
+      path: "/",
+      name: "login",
+      component: Login,
     },
     {
-        path: '/inventory',
-        name: 'inventory',
-        component: Inventory
+      path: "/signup",
+      name: "signup",
+      component: Signup,
     },
     {
-        path: '/transactions',
-        name: 'transactions',
-        component: Transactions
+      path: "/home",
+      name: "home",
+      component: Home,
     },
     {
-        path: '/analytics',
-        name: 'analytics',
-        component: Analytics
+      path: "/inventory",
+      name: "inventory",
+      component: Inventory,
     },
     {
-        path: '/market',
-        name: 'market',
-        component: Market
+      path: "/transactions",
+      name: "transactions",
+      component: Transactions,
     },
     {
-        path: '/employees',
-        name: 'employees',
-        component: Employees
+      path: "/analytics",
+      name: "analytics",
+      component: Analytics,
     },
     {
-        path: '/categories',
-        name: 'categories',
-        component: Categories
+      path: "/market",
+      name: "market",
+      component: Market,
     },
     {
-        path: '/help',
-        name: 'help',
-        component: HelpCenter
+      path: "/employees",
+      name: "employees",
+      component: Employees,
     },
     {
-        path: '/settings',
-        name: 'settings',
-        component: Settings
+      path: "/categories",
+      name: "categories",
+      component: Categories,
     },
-]
-})
+    {
+      path: "/help",
+      name: "help",
+      component: HelpCenter,
+    },
+    {
+      path: "/settings",
+      name: "settings",
+      component: Settings,
+    },
+  ],
+});
